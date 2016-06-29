@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reminder</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <form id="frmReminders" action="" method="post">
+        <fieldset>
+            <div class="campo">
+                <label for="reminder">Reminder</label>
+                <input type="text" id="id" name="reminder" required="required" placeholder="Final exam" style="width: 20em" value="" />
+            </div>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="date" placeholder="28/06/2016" required="required" style="width: 10em" value="" />
+                </div>
+                <div class="campo">
+                    <label for="time">Time</label>
+                    <input type="text" id="time" name="time" placeholder="19:00" required="required" style="width: 10em" value="" />
+                </div>
+
+                <div class="campo">
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Add">
+                </div>
+            </fieldset>
+
+            <table id="reminders" border="1">
+                <caption>Reminders</caption>
+                <thead>
+                    <tr>
+                        <th>reminder</th>
+                        <th>date</th>
+                        <th>time</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+            <hr align="center" width="400" size="1" color=black>
+    </form>
+
+
+    <script type="text/javascript" src="js/Index.js"></script>
+    <script type="text/javascript" src="js/TableReminder.js"></script>
+    <script type="text/javascript" src="js/ReminderDAO.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+fieldset {
+    border: 0;
+}
+ 
+body, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+ 
+.campo {
+    margin-bottom: 1em;
+}
+ 
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+ 
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+td.acoes img {
+	cursor: pointer;
+}
+
+input[type='text'] {
+	border: 2px solid #002;
+}
+
+#reminders tr > td{
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
